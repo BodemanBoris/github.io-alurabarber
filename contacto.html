@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contacto.css" />
+    <title>Contacto - Barberia Alura</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-img">
+        <img src="assets/logo.png" alt="Logo barberia" />
+      </div>
+      <div class="nav">
+        <nav class="nav-menu">
+          <ul class="nav-link__conteiner">
+            <li class="nav-list">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+              <a href="productos.html" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-list">
+              <a class="pag-actual" href="#" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br />
+
+    <main class="main">
+      <form class="form">
+        <label for="name">Nombre</label>
+        <input
+          class="input-padron"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ingrese su nombre"
+          required
+        />
+
+        <label for="email">email</label>
+        <input
+          class="input-padron"
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Ingrese su email"
+        />
+
+        <label for="phone">Telefono</label>
+        <input
+          class="input-padron"
+          required
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Ingrese su numero telefonico"
+        />
+
+        <label for="texto">Comentario</label>
+        <textarea
+          class="input-padron"
+          required
+          type="text"
+          name="texto"
+          id="texto"
+          placeholder="Ingrese su texto"
+          rows="7"
+        ></textarea>
+
+        <fieldset class="conteiner-radio">
+          <legend>¿Como te gustaria que te contectemos?</legend>
+
+          <label for="email-contact"
+            ><input
+              type="radio"
+              name="contacto"
+              id="email-contact"
+              class="input-radio"
+            />
+            Email</label
+          >
+
+          <label for="tel-contact">
+            <input
+              type="radio"
+              name="contacto"
+              id="tel-contact"
+              class="input-radio"
+            />
+            Telefono</label
+          >
+
+          <label for="whats-contact">
+            <input
+              checked
+              type="radio"
+              name="contacto"
+              id="waths-contact"
+              class="input-radio"
+            />WhatsApp</label
+          >
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>¿En que horario te gustaria ser atendido?</legend>
+          <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </fieldset>
+        <br />
+        <br />
+
+        <label for="chekbox-i"
+          ><input checked type="checkbox" name="" id="checkbox-i" /> ¿Le
+          gustaria recibir informacion de nuestra barberia?</label
+        >
+
+        <input
+          class="input-padron"
+          type="submit"
+          value="Enviar"
+          id="btn-submit"
+        />
+      </form>
+
+      <div class="conteiner-tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Hora</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>8 ~ 20</td>
+            </tr>
+            <tr>
+              <td>Miercoles</td>
+              <td>8 ~ 20</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>8 ~ 20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <br />
+    <footer class="footer">
+      <div class="conteiner-footer">
+        <img
+          class="barba-blanca"
+          src="assets/logo-blanco.png"
+          alt="Logo de barberia en blanco"
+        />
+      </div>
+      <p>&copy; Copirigth Barberia Alura - 2023</p>
+    </footer>
+  </body>
+</html>
